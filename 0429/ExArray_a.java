@@ -18,22 +18,18 @@ class ExArray_a{
 				}
 		return min;
 	}
-//	public static int maxValue(int[]srr) { //enhanced-for 
-//		
-//		for( int ii : srr) {
-//			int max = srr[0];
-//			if(max < srr[ii]) {
-//				max = srr[ii];
-//				ii++;
-//			} 
-//		return max;
-//		}
-//		
-//	}
+	public static int maxValue(int[]srr) { //enhanced-for!!!!
+		int max = srr[0];
+		for(int ii=0; ii<srr.length;ii++)
+			if(max<srr[ii]) {
+				max = srr[ii];
+			}
+		return max;
+	}
 	
 	public static void main(String[]args) {
 		System.out.println(minValue(srr));
-//		System.out.println(maxValue(srr));
+		System.out.println(maxValue(srr));
 	}
 
 }
