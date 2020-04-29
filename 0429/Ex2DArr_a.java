@@ -14,9 +14,16 @@ package studyJava;
 
 public class Ex2DArr_a {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	static void addOneDArr(int[] arr, int add){
+		for (int i=0; i<arr.length;i++){
+			arr[i] += add; 
+		}
+	}
+	static void addTwoDArr(int [][]arr, int add){
+		for (int i=0; i<arr.length;i++){
+			addOneDArr(arr[i], add);
+			addOneDArr(arr[0]);
+		}
 	}
 
 }
