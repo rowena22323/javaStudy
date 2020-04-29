@@ -33,3 +33,6 @@ class ExArray_a{
 	}
 
 }
+
+
+http://www.pythontutor.com/java.html#code=public%20class%20ExArray_a%7B%0A%20%20%20%20static%20int%20%5B%5D%20srr%20%3D%20%7B30,60,90%7D%3B%0A%20%20%20%20%0A%20%20%20%20public%20static%20int%20maxValue%28int%5B%5Dsrr%29%20%7B%0A%20%20%20%20%20%20%20%20int%20max%20%3D%20srr%5B0%5D%3B%0A%20%20%20%20%20%20%20%20for%28int%20i%20%3A%20srr%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20if%28max%3Ci%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20max%20%3D%20i%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20return%20max%3B%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20public%20static%20void%20main%28String%5B%5Dargs%29%20%7B%0A%20%20%20%20%20%20%20%20System.out.println%28maxValue%28srr%29%29%3B%0A%20%20%20%20%7D%0A%0A%7D&cumulative=false&curInstr=19&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false
