@@ -20,10 +20,10 @@ class ExArray_a{
 	}
 	public static int maxValue(int[]srr) { //enhanced-for!!!!
 		int max = srr[0];
-		for(int ii=0; ii<srr.length;ii++)
-			if(max<srr[ii]) {
-				max = srr[ii];
-			}
+		for(int i : srr){ //i = srr[i]
+			if(max<i)
+				max=i;
+		}
 		return max;
 	}
 	
