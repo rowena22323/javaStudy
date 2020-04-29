@@ -1,4 +1,4 @@
-package studyJava;
+package kcci.java;
 
 /***
  * 	다음 형태로 표현된 2차원 배열이 존재한다고 가정해보자.
@@ -14,9 +14,19 @@ package studyJava;
  */ 
 
 public class Ex2DArr_b {
-
+	
+	int [][] ar = {{1,2,3},{4,5,6},{7,8,9}};
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		int count = 0;
+		
+		int [][] cc = new int[count][count];
+		for(int i=0; i<count; i++) {
+			for(int j=0; j<count;j++) {
+
+			}
+		}
+		System.out.println(cc);
 
 	}
 
