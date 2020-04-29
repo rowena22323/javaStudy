@@ -13,21 +13,21 @@ package kcci.java;
  *  배열의 가로와 세로길이에 상관없이 위와 같이 동작하도록 메소드를 정의해야 한다. 
  */ 
 
-public class Ex2DArr_b {
-	
-	int [][] ar = {{1,2,3},{4,5,6},{7,8,9}};
-	
-	public static void main(String[] args) {
-		int count = 0;
-		
-		int [][] cc = new int[count][count];
-		for(int i=0; i<count; i++) {
-			for(int j=0; j<count;j++) {
-
-			}
+public class pp{
+	public static void main(String[]args){
+		int [][]ar={
+			{1,2,3},(4,5,6},{7,8,9}};
+				 
+	int[] tmp;
+	for(int=0;i<ar.length-1;i--);
+	tmp=ar[2];
+	ar[2] = ar[1];
+	ar[1] = ar[0];
+	ar[0] = tmp;
+				 
+	for(int i=0; i<ar.length;i++){
+		for(int j=0;j<ar[i].length;j++){
+			System.out.println();
 		}
-		System.out.println(cc);
-
 	}
-
-}
+	
