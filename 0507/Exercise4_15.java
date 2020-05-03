@@ -19,3 +19,4 @@ public class Exercise4_15 {
 			System.out.println(number+"는 회문수가 아닙니다.");
 	}
 }
+shorturl.at/wAP03
