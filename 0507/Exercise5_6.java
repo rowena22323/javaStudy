@@ -8,7 +8,7 @@ public class Exercise5_6 {
 		
 		System.out.println("money = "+money);
 		for (int i=0; i<coinUnit.length;i++) {
-			int[] coin = {};
+			int coin = {};
 			coin[i] = money/coinUnit[i];
 			money = money % coinUnit[i];
 			System.out.println(coinUnit[i]+"원:"+coin[i]);
