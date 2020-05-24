@@ -1,0 +1,23 @@
+배열보다는 ArrayList<E>가 더 좋다.
+
+1) 인스턴스의 저장과 삭제가 편하다.
+
+2) 반복자를 쓸 수 있다. 
+
+3) 선언과 동시에 초기화를 할 수 없다?
+  List<String> list = Arrays.asList("Toy", "Robot", "Box");
+  - 인자로 전달된 인스턴스들을 저장한 컬렉션 인스턴스의 생성 및 반환 (새로운 인스턴스의 추가나 삭제가 불가능) 
+  
+  class ArrayList<E> { public ArrayList(Collection<? extends E> c) {} }
+  - 인스턴스의 추가나 삭제가 필요한 상황이라면 위 생성자를 기반으로 ArrayList<E> 인스턴스를 생성해야 한다. 
+  
+     = public ArrayList(Collection<E> c)
+        > Collection<E>를 구현한 컬렉션 인스턴스를 인자로 전달받는다. <E>는 생성과정에서 결정.
+        > 매개변수 c로 전달된 컬렉션 인스턴스에서는 참조만 가능.
+        
+4) 생성자로 전달된 컬렉션 인스턴스에 저장된 모든 데이터가 새로 생성되는 ArrayList<E> 인스턴스에 복사된다. : 배열을 대신하는 컬렉션 인스턴스의 생성
+  public static void main(String[]args){
+    List<String>list = Arrays.asList("Toy","Box","Robot","Box");
+    list = new ArrayList<>(list);
+    ...
+  }
