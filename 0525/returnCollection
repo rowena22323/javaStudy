@@ -21,3 +21,14 @@
     list = new ArrayList<>(list);
     ...
   }
+  
+  대다수 컬렉션 클래스들은 다른 컬렉션 인스턴스를 인자로 전달받는 생성자를 가지고 있어서, 다른 컬렉션 인스턴스에 저장된 데이터를 복사해서 새로운
+  컬렉션 인스턴스를 생성할 수 있다.
+  
+   public ArrayList(Collection<? extends E> c) : ArrayList<E>
+   
+   public LinkedList(Collection<? extends E> c) : LinkedList<E>
+   
+   public HashSet(Collection<? extends E> c) : HashSet<E>
+
+  
